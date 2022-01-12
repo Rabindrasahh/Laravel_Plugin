@@ -1,0 +1,28 @@
+{
+    "name": "acelle/add-new-lead-to-crm",
+    "title": "Auto add new lead to a crm",
+    "version": "1.0.0",
+    "app_version": "4.0.24",
+    "description": "Add new lead to a crm",
+    "authors": [
+        {
+            "name": "Basic Technology Software Co., Ltd.",
+            "email": "contact@b-teka.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acelle\\Plugin\\AddNewLeadToCrm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Acelle\\Plugin\\AddNewLeadToCrm\\ServiceProvider"
+            ]
+        },
+        "setting-route": "\\Acelle\\Plugin\\AddNewLeadToCrm\\Controllers\\MainController@index"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
